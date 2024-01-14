@@ -17,6 +17,7 @@ class GuiProgram(Ui_Dialog):
         self.pushButton_2.clicked.connect(self.actions_from_2)
         self.pushButton_3.clicked.connect(self.actions_from_3)
         self.pushButton_plus.clicked.connect(lambda: self.set_value("+"))
+        self.pushButton_minus.clicked.connect(lambda: self.set_value("-"))
         self.pushButton_calculate.clicked.connect(self.calculate)
 
     def actions_from_0(self) -> None:
